@@ -8,11 +8,14 @@ skip-lint = false
 [programs.localnet]
 solana_encrypted_chat = "2ZrfKcAszeddfxEcr5b1zTpSDosQheYpPqiPmyoXQvV4"
 
+[programs.devnet]
+solana_encrypted_chat = "2ZrfKcAszeddfxEcr5b1zTpSDosQheYpPqiPmyoXQvV4"
+
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

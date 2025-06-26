@@ -43,7 +43,7 @@ pub mod solana_encrypted_chat {
 }
 
 #[derive(Accounts)]
-pub struct Initialize {
+pub struct Initialize<'info> {
     #[account(
         init,
         payer = user,
@@ -58,7 +58,7 @@ pub struct Initialize {
 }
 
 #[derive(Accounts)]
-pub struct SendMessage {
+pub struct SendMessage<'info> {
     #[account(
         init,
         payer = sender,
@@ -79,7 +79,7 @@ pub struct SendMessage {
 }
 
 #[derive(Accounts)]
-pub struct GetMessages {
+pub struct GetMessages<'info> {
     pub user: Signer<'info>,
 }
 
